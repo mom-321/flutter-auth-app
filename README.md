@@ -1,16 +1,40 @@
-# flutter_auth_app
+# Firebase Authentication Flutter App
 
-A new Flutter project.
+This is a Flutter app that demonstrates Firebase authentication, allowing users to sign up and log in using their email and password.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- User authentication via email and password
+- Firebase integration for user sign-in and sign-up
+- Simple UI for login and signup pages
 
-A few resources to get you started if this is your first Flutter project:
+## Setup
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Prerequisites
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter SDK (ensure you have it installed on your system)
+- Firebase account
+- Firebase project created with authentication enabled
+
+### Steps to run the app
+
+1. **Clone the repository:**
+   Open your terminal and run:
+   ```bash
+   git clone https://github.com/username/flutter-auth-app.git
+In main.dart, Firebase is initialized with the following configuration:
+
+dart
+Copy
+Edit
+await Firebase.initializeApp(
+  options: const FirebaseOptions(
+    apiKey: "your-api-key",
+    authDomain: "your-auth-domain",
+    projectId: "your-project-id",
+    storageBucket: "your-storage-bucket",
+    messagingSenderId: "your-messaging-sender-id",
+    appId: "your-app-id",
+  ),
+);
+Replace "your-api-key", "your-auth-domain", etc., with the actual configuration from the Firebase Console.
